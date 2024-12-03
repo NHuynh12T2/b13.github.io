@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khảo Sát: Quan Tâm Đến Bảo Vệ Động Vật</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f9fc;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        p {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        textarea {
+            resize: vertical;
+        }
+        .radio-group, .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .radio-group label, .checkbox-group label {
+            font-weight: normal;
+        }
+        button {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Khảo Sát Quan Tâm</h1>
+        <p>Chúng tôi muốn biết bạn quan tâm đến bảo vệ động vật như thế nào. Vui lòng hoàn thành biểu mẫu này!</p>
+        <form action="#" method="POST">
+            <!-- Câu hỏi 1 -->
+            <label for="name">Họ và tên:</label>
+            <input type="text" id="name" name="name" placeholder="Nhập họ và tên" required>
+            
+            <!-- Câu hỏi 2 -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Nhập email của bạn" required>
+
+            <!-- Câu hỏi 3 -->
+            <label>Bạn đánh giá mức độ quan tâm của mình đến bảo vệ động vật ở mức nào?</label>
+            <div class="radio-group">
+                <label><input type="radio" name="interest_level" value="Rất cao" required> Rất cao</label>
+                <label><input type="radio" name="interest_level" value="Cao" required> Cao</label>
+                <label><input type="radio" name="interest_level" value="Bình thường" required> Bình thường</label>
+                <label><input type="radio" name="interest_level" value="Thấp" required> Thấp</label>
+                <label><input type="radio" name="interest_level" value="Rất thấp" required> Rất thấp</label>
+            </div>
+
+            <!-- Câu hỏi 4 -->
+            <label>Bạn quan tâm đến các chủ đề nào? (Có thể chọn nhiều)</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="topics" value="Bảo tồn rừng"> Bảo tồn rừng</label>
+                <label><input type="checkbox" name="topics" value="Bảo vệ động vật hoang dã"> Bảo vệ động vật hoang dã</label>
+                <label><input type="checkbox" name="topics" value="Chống săn bắn trái phép"> Chống săn bắn trái phép</label>
+                <label><input type="checkbox" name="topics" value="Nuôi thú cưng đúng cách"> Nuôi thú cưng đúng cách</label>
+            </div>
+
+            <!-- Câu hỏi 5 -->
+            <label for="feedback">Bạn có đề xuất hoặc ý kiến gì để nâng cao việc bảo vệ động vật?</label>
+            <textarea id="feedback" name="feedback" rows="5" placeholder="Nhập ý kiến của bạn"></textarea>
+
+            <!-- Nút gửi -->
+            <button type="submit">Gửi Khảo Sát</button>
+        </form>
+    </div>
+</body>
+</html>
